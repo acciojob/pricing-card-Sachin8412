@@ -5,12 +5,82 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+<style>
+	body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
 
+.pricing-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+.pricing-card .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pricing-card .price {
+    font-size: 36px;
+    color: #2a7ae2;
+    margin: 20px 0;
+}
+
+.pricing-card .features {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    color: #666;
+}
+
+.pricing-card .features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing-card .features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-card .button {
+    background-color: #2a7ae2;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.pricing-card .button:hover {
+    background-color: #1d5bbf;
+}
+	
+</style>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+ <div class="pricing-card">
+        <h2 class="title">Basic Plan</h2>
+        <p class="price">$19.99</p>
+        <ul class="features">
+            <li>10GB Storage</li>
+            <li>10 Emails</li>
+            <li>24/7 Support</li>
+            <li>Unlimited Bandwidth</li>
+        </ul>
+        <a href="#" class="button">Sign Up</a>
+    </div>
 </body>
 
 </html>
